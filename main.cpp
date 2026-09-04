@@ -41,3 +41,19 @@ int main() {
 
     return 0;
 }
+
+// Selection Sort algorithm to sort scores in ascending order
+void sortScores(double* scores, int numScores) {
+    for (int i = 0; i < numScores - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < numScores; j++) {
+            if (scores[j] < scores[minIndex]) {
+                minIndex = j;
+            }
+        }
+        // Swap the scores
+        double temp = scores[i];
+        scores[i] = scores[minIndex];
+        scores[minIndex] = temp;
+    }
+}
