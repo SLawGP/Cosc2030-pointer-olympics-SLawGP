@@ -57,3 +57,12 @@ void sortScores(double* scores, int numScores) {
         scores[minIndex] = temp;
     }
 }
+
+// Function to calculate the average score
+double calculateAverage(double* scores, int numScores) {
+    double sum = 0.0;
+    for (int i = 0; i < numScores; i++) {
+        sum += scores[i];
+    }
+    return sum / numScores;
+}
