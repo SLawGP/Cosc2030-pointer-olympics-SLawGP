@@ -25,8 +25,10 @@ int main() {
     }
 
     // Sort scores
+    sortScores(scores, numScores);
 
     // Calculate average score
+    double average = calculateAverage(scores, numScores);
 
     // Award medals
 
