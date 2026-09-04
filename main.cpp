@@ -80,3 +80,13 @@ void awardMedals(double* scores, int numScores) {
         cout << "Bronze Medal: " << scores[numScores - 3] << endl;
     }
 }
+
+// With Clear Headings, Display the Sorted Scores, Average Score, and Medal Winners
+void displayResults(double* scores, int numScores, double average) {
+    cout << fixed << setprecision(2); // Set precision for floating-point output
+    cout << "\nSorted Scores:" << endl;
+    for (int i = 0; i < numScores; i++) {
+        cout << scores[i] << endl;
+    }
+    cout << "\nAverage Score: " << average << endl;
+}
