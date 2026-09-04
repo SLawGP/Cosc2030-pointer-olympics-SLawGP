@@ -31,8 +31,10 @@ int main() {
     double average = calculateAverage(scores, numScores);
 
     // Award medals
+    awardMedals(scores, numScores);
 
     // Display results
+    displayResults(scores, numScores, average);
 
     // Deallocate memory for scores array
 
