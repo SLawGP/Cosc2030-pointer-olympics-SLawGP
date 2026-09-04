@@ -66,3 +66,17 @@ double calculateAverage(double* scores, int numScores) {
     }
     return sum / numScores;
 }
+
+// Function to award medals to the top 3 Scores
+void awardMedals(double* scores, int numScores) {
+    cout << "Medal Winners:" << endl;
+    if (numScores >= 1) {
+        cout << "Gold Medal: " << scores[numScores - 1] << endl;
+    }
+    if (numScores >= 2) {
+        cout << "Silver Medal: " << scores[numScores - 2] << endl;
+    }
+    if (numScores >= 3) {
+        cout << "Bronze Medal: " << scores[numScores - 3] << endl;
+    }
+}
