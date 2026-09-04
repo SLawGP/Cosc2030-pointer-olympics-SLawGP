@@ -37,6 +37,7 @@ int main() {
     displayResults(scores, numScores, average);
 
     // Deallocate memory for scores array
+    delete[] scores;
 
     return 0;
 }
