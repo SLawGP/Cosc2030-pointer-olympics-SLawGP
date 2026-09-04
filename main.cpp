@@ -19,6 +19,10 @@ int main() {
     double* scores = new double[numScores];
 
     // Get scores from user
+    cout << "Enter the scores for each athlete: ";
+    for (int i = 0; i < numScores; i++) {
+        cin >> scores[i];
+    }
 
     // Sort scores
 
